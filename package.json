@@ -1,0 +1,80 @@
+{
+  "name": "azure-metrics",
+  "author": {
+    "name": "J Burnett"
+  },
+  "version": "0.8.0",
+  "description": "Windows Azure Metrics Client Library for node",
+  "tags": [
+    "azure-metrics",
+    "sdk"
+  ],
+  "keywords": [
+    "node",
+    "azure",
+    "metrics",
+    "azure metrics"
+  ],
+  "main": "./lib/azure-metrics.js",
+  "engines": {
+    "node": ">= 0.6.15"
+  },
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "dependencies": {
+    "azure": ">= 0.6.2",
+    "xml2js": ">= 0.1.11",
+    "sax": ">= 0.1.1",
+    "qs": ">= 0.3.1",
+    "log": ">= 1.2.0",
+    "xmlbuilder": ">= 0.3.1",
+    "mime": ">= 1.2.4",
+    "dateformat": "1.0.2-1.2.3",
+    "underscore": ">= 1.3.1",
+    "underscore.string": ">= 2.0.0",
+    "node-uuid": "> = 1.2.0",
+    "tunnel": ">= 0.0.1",
+    "async": ">= 0.1.18",
+    "streamline": "0.2.4",
+    "commander": ">= 0.5.2",
+    "winston": ">= 0.5.10",
+    "colors": "0.x.x",
+    "eyes": "0.x.x",
+    "easy-table": "0.0.1",
+    "request": ">= 2.9.203"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "jshint": "*",
+    "sinon": "*",
+    "should": "*"
+  },
+  "homepage": "http://github.com/WindowsAzure/[TBD]",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WindowsAzure/[TBD]"
+  },
+  "bugs": {
+    "url": "http://github.com/WindowsAzure/[TBD]/issues"
+  },
+  "scripts": {
+    "test": "node test/runtests.js testlist.txt",
+    "jshint": "node test/runjshint.js",
+    "coverage": "node test/runtests.js testlist.txt -coverage > coverage.html",
+    "extendedtests": "node test/runtests.js extendedtestlist.txt"
+  },
+  "bin": {
+    "azure-metrics": "./bin/azure-metrics"
+  },
+  "readme": "[TBD] edit README.md & load here; incl \n's ,etc.",
+  
+  "_id": "azure-metrics@0.8.0",
+  "dist": {
+    "shasum": "6b5671fdcd43c0082392c356a5f20d26190a64d0"
+  },
+  "_from": "azure"
+}
