@@ -1,7 +1,8 @@
 {
   "name": "azure-metrics",
   "author": {
-    "name": "J Burnett"
+    "name": "J Burnett",
+    "company": "AltaModa Technologies, LLC"
   },
   "version": "0.8.0",
   "description": "Windows Azure Metrics Client Library for node",
