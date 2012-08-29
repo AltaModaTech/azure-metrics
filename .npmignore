@@ -4,8 +4,5 @@
 # Node #
 node_modules/
 
-# Examples (TBD) #
-examples/
-
 # Test folder #
 test/
