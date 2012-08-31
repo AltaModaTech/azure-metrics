@@ -4,7 +4,7 @@
     "name": "J Burnett",
     "company": "AltaModa Technologies, LLC"
   },
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Windows Azure Storage Metrics Client Library",
   "tags": [
     "azure-metrics",
@@ -28,8 +28,7 @@
   ],
   "dependencies": {
     "azure": ">= 0.6.2",
-    "util": ">= 0.4.9",
-    "nclosure": "0.4.3"
+    "util": ">= 0.4.9"
   },
   "devDependencies": {
     "mocha":    ">= 1.4.0",
@@ -51,6 +50,6 @@
   },
   "readme": "See README.md at http://github.com/jburnett/azure-metrics",
   
-  "_id": "azure-metrics@0.8.1",
+  "_id": "azure-metrics@0.8.2",
   "_from": "azure"
 }
