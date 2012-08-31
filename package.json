@@ -28,9 +28,12 @@
   ],
   "dependencies": {
     "azure": ">= 0.6.2",
-    "util": ">= 0.4.9"
+    "util": ">= 0.4.9",
+    "nclosure": "0.4.3"
   },
   "devDependencies": {
+    "mocha":    ">= 1.4.0",
+    "should":   ">= 1.1.0"
   },
   "homepage": "http://github.com/jburnett/azure-metrics",
   "repository": {
@@ -41,6 +44,7 @@
     "url": "http://github.com/jburnett/azure-metrics/issues"
   },
   "scripts": {
+    "test": "make test"
   },
   "bin": {
     "azure-metrics": "./bin/azure-metrics"

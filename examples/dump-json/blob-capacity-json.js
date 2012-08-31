@@ -27,8 +27,11 @@ if (fs.existsSync('./../../lib/azure-metrics.js')) {
 
 var azacct = require('./azure-account');
 
+var options = {};
+options.beginDate = '20120823';
+
 var azmet = azuremetrics.createMetricsService( azacct.accountName, azacct.accountKey );
-azmet.getBlobCapacities( function(error, capacityMetrics) {
+azmet.getBlobCapacities( options, function(error, capacityMetrics) {
     if (error === null) {
         console.log( JSON.stringify( capacityMetrics ) );
     }

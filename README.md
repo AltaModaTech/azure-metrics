@@ -12,6 +12,8 @@ For documentation on how to host Node.js applications on Windows Azure, please s
     * Retrieve daily capacity metrics for all blobs in an Azure account
 * Transaction Metrics
     * Retrieve hourly transaction metrics for all blobs, queues and tables in an Azure account
+* Filter by date
+    * Specify a begin date and optional end date when retrieving metrics
 
 # Getting Started
 ## Download Source Code
@@ -33,9 +35,11 @@ You can use these packages against the cloud Windows Azure Services.
 ## Blob Capacity Metrics
 
 ```Javascript
+var opts = {};
+opts.beginDate = new Date().addDays(-5);    // Retrieve the last 5 days of metrics
 var metricsService = azure-metrics.createMetricsService();
-metricsService.getBlobCapacities( function(error, capacityEntities){
-    if(!error){
+metricsService.getBlobCapacities( opts, function(error, capacityEntities){
+    if(error === null){
         // use capacityEntities JSON data
     }
 });
