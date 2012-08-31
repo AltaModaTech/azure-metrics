@@ -13,10 +13,15 @@
 * limitations under the License.
 */
 
+// NOTE: Two mechanisms exist for authentication.
+//  1) Set Azure account name and key in this file - Each of these examples loads the
+//      account name & key from this file.  This approach only works for these
+//      examples.
+//  2) Add Azure account name and key to environment - If the name and key are null 
+//      or not provided, the environment variables AZURE_STORAGE_ACCOUNT & 
+//      AZURE_STORAGE_ACCESS_KEY will be used.  This approach works for all code
+//      using Azure-Metrics.
 
-// NOTE: Set these values to use your Azure Storage Account name and access key.  If
-//  these values are null, the environment variables AZURE_STORAGE_ACCOUNT & 
-//  AZURE_STORAGE_ACCESS_KEY will be used.
 var AzureAccount = {
     accountName: null, // replace with your azure storage account name as a string
     accountKey: null   // replace with your azure storage account access key as a string
